@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--     Scene Length: How long will it take for the action to take shape (seed to sprout) -- total event duration
+         Finished Timelapse Length: how long should the final video be? -- finished video time
+         How many fps should the video be? -- fps
+
+         Now the calculation:
+         total event duration: 5 days
+         Finished video time: 20 seconds
+         fps: 50
+
+         You want a video that has 50fps, that goes for 20 seconds.
+         So, if you multiply those you get 1000 frames which is 1000 photos.
+         Now we need 1000 photos to spread out over 5 days.
+
+         convert days to seconds:
+         5 days = 432,000 seconds
+
+         432,000 seconds / 1000 photos = 432 seconds between photos
+
+         If we take one photo every 432 seconds for 5 days we will have enough photos to make a 20 second
+         video at 50fps.
+
+         !!! also include memory storage amounts
+    -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Timelapse Calculator</title>
+</head>
+
+<body>
+    <div class="input">
+        <div class="input-heading">
+            <h1>Timelapse Calculator</h1>
+        </div>
+
+        <div class="event-duration-input">
+            <h2>How long is the event you want to capture?</h2>
+            <input type="text" id="event-duration-days" placeholder="Days" />
+            <input type="text" id="event-duration-hours" placeholder="Hours" />
+            <input type="text" id="event-duration-minutes" placeholder="Minutes" />
+        </div>
+
+        <div class="final-video-length-input">
+            <h2>How long do you want the final video to be?</h2>
+            <input type="text" id="final-video-hours" placeholder="Hours" />
+            <input type="text" id="final-video-minutes" placeholder="Minutes" />
+            <input type="text" id="final-video-seconds" placeholder="Seconds" />
+        </div>
+
+        <div class="fps-input">
+            <h2>How many FPS do you want the final video to be?</h2>
+            <input type="text" id="fps-textbox" placeholder="FPS" />
+        </div>
+
+        <div class="memory-input">
+            <h2>How many mb is one photo?</h2>
+            <input type="text" id="memory-textbox" placeholder="0" />
+        </div>
+
+        <div class="btn-wrapper">
+            <button id="calc-btn" type="button" onclick="calculate();">
+          Calculate My Timelapse
+        </button>
+
+            <button id="reset-btn" type="button" onclick="reset();">
+          Reset
+        </button>
+        </div>
+    </div>
+
+    <div class="output">
+        <div class="output-heading">
+            <h1>Results</h1>
+        </div>
+
+        <div id="print-results"></div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

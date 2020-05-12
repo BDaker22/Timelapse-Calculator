@@ -1,0 +1,60 @@
+html {
+    background: #100a1c;
+    background-image: radial-gradient( 50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
+}
+
+body {
+    color: #6cacc5;
+    font: 300 18px/1.6 sans-serif;
+    margin: 0;
+    padding: 5em 0 2em;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: sans-serif;
+    margin: 0;
+    color: #5a8fa3;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+#calc-btn {
+    background: black;
+    border: 1px solid rgb(134, 130, 130);
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    color: #6cacc5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#reset-btn {
+    background: black;
+    border: 1px solid rgb(134, 130, 130);
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    color: #6cacc5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    padding-left: 5px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
