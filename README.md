@@ -3,7 +3,7 @@ TL;DR
 A calculator to help you determine how many photos to take and how often to reach a desired video length for a time lapse.
 Also includes the amount of memory that will be used.
 
-Detailed Explanation
+Detailed Explanation:
 Determine how long the event you want to capture will last. For example, how long do you want to record seeds sprouting?
 Then determine how long you want your final video to be.
 How many frames per second (fps) do you want your video?
